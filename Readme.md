@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-QUizSEO
-=======
 # QuizSEO (static landing)
 
 ## Quiz library
@@ -22,4 +19,3 @@ QUizSEO
 
 - `favicon.svg` matches the main Quiz Generator app.
 - `quiz-library.css` / `quiz-library.js` — no build step; plain static files.
->>>>>>> 9ff426d (My changes from the ZIP version)
