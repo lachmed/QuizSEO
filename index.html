@@ -8,6 +8,7 @@
     -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<<<<<<< HEAD
 
     <!-- FAVICON (Standard practice) -->
     <link
@@ -29,6 +30,36 @@
     <meta
       name="description"
       content="AI Quiz Generator and free Quiz Maker tool. Instantly create multiple choice, open answer, and matching tests from documents or websites. Edit, share, and grade assessments easily."
+=======
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <meta name="theme-color" content="#172671" />
+    <meta name="author" content="Quiz Generator" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="dns-prefetch" href="https://quizgenerator-r4pa.onrender.com" />
+
+    <!-- Favicon — same as main Quiz Generator app -->
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="shortcut icon" href="favicon.svg" />
+
+    <!-- API & app URLs for static quiz library (same backend as Vue app) -->
+    <meta
+      name="quiz-api-base"
+      content="https://quizgenerator-r4pa.onrender.com"
+    />
+    <meta
+      name="quiz-app-base"
+      content="https://quizgenerator-r4pa.onrender.com"
+    />
+
+    <title>
+      AI Quiz Generator | Free Quiz Maker from PDF, Text &amp; Topics (EN/AR)
+    </title>
+
+    <meta
+      name="description"
+      content="Free AI quiz maker: build multiple choice, true/false, matching &amp; open-answer quizzes from PDFs, docs, or any topic. Auto-grade, share links, Arabic &amp; English. Try the community quiz library."
+>>>>>>> 9ff426d (My changes from the ZIP version)
     />
 
     <!-- 
@@ -44,6 +75,7 @@
     -->
     <link rel="canonical" href="https://the-quiz-generator.com/" />
 
+<<<<<<< HEAD
     <!-- 
     HREFLANG: Essential for International SEO (Signaling Arabic version for discovery)
     Note: A separate /ar/ page would host the Arabic content.
@@ -52,6 +84,22 @@
       rel="alternate"
       href="https://the-quiz-generator.com/ar.html"
       hreflang="ar-eg"
+=======
+    <link
+      rel="alternate"
+      href="https://the-quiz-generator.com/"
+      hreflang="en"
+    />
+    <link
+      rel="alternate"
+      href="https://the-quiz-generator.com/ar.html"
+      hreflang="ar"
+    />
+    <link
+      rel="alternate"
+      href="https://the-quiz-generator.com/ar.html"
+      hreflang="ar-EG"
+>>>>>>> 9ff426d (My changes from the ZIP version)
     />
     <link
       rel="alternate"
@@ -59,6 +107,7 @@
       hreflang="x-default"
     />
 
+<<<<<<< HEAD
     <!-- 
     OPEN GRAPH (OG) & TWITTER CARD TAGS: Essential for Social Media Sharing SEO
     -->
@@ -79,6 +128,37 @@
     <meta name="twitter:site" content="@QuizGeneratorApp" />
     <!-- If you have a Twitter account -->
     <meta name="twitter:creator" content="@QuizGeneratorApp" />
+=======
+    <meta
+      property="og:title"
+      content="AI Quiz Generator | Free Quiz Maker from PDF, Text &amp; Topics"
+    />
+    <meta
+      property="og:description"
+      content="Free AI quiz maker: MCQ, matching, true/false &amp; open answers from documents or topics. Auto-grade, share links, Arabic &amp; English."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://the-quiz-generator.com/" />
+    <meta property="og:site_name" content="Quiz Generator" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:locale:alternate" content="ar_EG" />
+    <meta
+      property="og:image"
+      content="https://the-quiz-generator.com/favicon.svg"
+    />
+    <meta property="og:image:alt" content="Quiz Generator logo" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="AI Quiz Generator | Free Quiz Maker" />
+    <meta
+      name="twitter:description"
+      content="Create &amp; share quizzes from PDFs or topics. Auto-grading, Arabic &amp; English."
+    />
+    <meta
+      name="twitter:image"
+      content="https://the-quiz-generator.com/favicon.svg"
+    />
+>>>>>>> 9ff426d (My changes from the ZIP version)
 
     <!-- 
     TAILWIND CSS CDN & FONT CONFIG (Inter is the default modern font) 
@@ -88,17 +168,27 @@
       /* Custom font configuration for Tailwind */
       @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
       :root {
+<<<<<<< HEAD
         --blue-primary: #172671; /* Deep Navy Blue */
       }
       body {
         font-family: "Inter", sans-serif;
         background-color: white;
+=======
+        --blue-primary: #172671; /* Deep Navy — matches app */
+        --surface-muted: #f1f5f9;
+      }
+      body {
+        font-family: "Inter", sans-serif;
+        background-color: #f8fafc;
+>>>>>>> 9ff426d (My changes from the ZIP version)
       }
       /* Custom styling for subtle aesthetic enhancements */
       .glow-shadow {
         /* Updated shadow to match the new dark blue */
         box-shadow: 0 0 15px rgba(23, 38, 113, 0.6);
       }
+<<<<<<< HEAD
     </style>
 
     <!-- 
@@ -131,11 +221,104 @@
           "Customizable Difficulty and Subject",
           "Instant, Automated Correction and Grading",
           "Printable and Shareable Assessments"
+=======
+      .header-app-link {
+        text-decoration: none;
+      }
+    </style>
+    <link rel="stylesheet" href="quiz-library.css" />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Organization",
+            "@id": "https://the-quiz-generator.com/#organization",
+            "name": "Quiz Generator",
+            "url": "https://the-quiz-generator.com/",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://the-quiz-generator.com/favicon.svg"
+            }
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://the-quiz-generator.com/#website",
+            "url": "https://the-quiz-generator.com/",
+            "name": "Quiz Generator",
+            "alternateName": "AI Quiz Generator",
+            "description": "Free AI quiz maker for teachers and learners: create multiple choice, matching, true/false, and open-answer quizzes from documents or topics, with auto-grading and a public quiz library.",
+            "publisher": { "@id": "https://the-quiz-generator.com/#organization" },
+            "inLanguage": ["en", "ar"]
+          },
+          {
+            "@type": "WebPage",
+            "@id": "https://the-quiz-generator.com/#webpage",
+            "url": "https://the-quiz-generator.com/",
+            "name": "AI Quiz Generator | Free Quiz Maker from PDF, Text & Topics",
+            "isPartOf": { "@id": "https://the-quiz-generator.com/#website" },
+            "inLanguage": "en-US",
+            "description": "Free AI quiz maker: build multiple choice, true/false, matching and open-answer quizzes from PDFs, docs, or any topic. Auto-grade, share links, Arabic and English."
+          },
+          {
+            "@type": "SoftwareApplication",
+            "name": "Quiz Generator",
+            "applicationCategory": "EducationalApplication",
+            "operatingSystem": "Web browser",
+            "url": "https://quizgenerator-r4pa.onrender.com/",
+            "description": "Web app to generate, edit, share, and grade quizzes with AI from text, files, or URLs.",
+            "offers": {
+              "@type": "Offer",
+              "price": "0",
+              "priceCurrency": "USD"
+            },
+            "featureList": [
+              "Multiple choice and multiple response",
+              "True or false",
+              "Matching and ordering",
+              "Open answer and fill in the blank",
+              "Automatic grading",
+              "Arabic and English interface"
+            ],
+            "provider": { "@id": "https://the-quiz-generator.com/#organization" }
+          },
+          {
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "What is Quiz Generator?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Quiz Generator is a free online tool that uses AI to build quizzes from your documents, pasted text, or a subject you describe. You can share quizzes with a link and use automatic scoring for supported question types."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Is the quiz maker free to use?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes. You can create and take quizzes without a paid plan. Optional login may unlock higher limits for some features on the full web app."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What quiz types does it support?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "The platform supports multiple choice, multiple response, true or false, matching, ordering, fill in the blank, and open answer formats, with instant feedback where applicable."
+                }
+              }
+            ]
+          }
+>>>>>>> 9ff426d (My changes from the ZIP version)
         ]
       }
     </script>
   </head>
   <body class="min-h-screen flex flex-col antialiased">
+<<<<<<< HEAD
     <!-- Navigation Header -->
     <header class="p-4 md:p-6 shadow-md sticky top-0 bg-white z-10">
       <div class="max-w-7xl mx-auto flex justify-between items-center">
@@ -162,6 +345,43 @@
         <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <!-- H1: PRIMARY KEYWORD FOCUS -->
           <h1
+=======
+    <header
+      class="p-4 md:p-6 shadow-md sticky top-0 bg-white z-10"
+      role="banner"
+    >
+      <div class="max-w-7xl mx-auto flex justify-between items-center">
+        <a
+          href="https://the-quiz-generator.com/"
+          class="text-xl md:text-2xl font-black text-[--blue-primary] tracking-tight no-underline hover:opacity-90"
+          >Quiz Generator</a
+        >
+        <nav class="flex items-center gap-3 flex-wrap justify-end">
+          <a
+            href="#community-quizzes"
+            class="text-sm font-semibold text-[--blue-primary] hover:underline hidden sm:inline"
+            >Browse quizzes</a
+          >
+          <a
+            href="https://quizgenerator-r4pa.onrender.com"
+            class="header-app-link px-4 py-2 text-sm font-semibold rounded-lg bg-[--blue-primary] text-white hover:bg-[#121d4d] transition duration-300 shadow-md"
+          >
+            Launch Quiz Maker App
+          </a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main-content" class="flex-grow" role="main">
+      <section
+        class="py-16 md:py-24 text-center border-b border-slate-200/80 bg-white"
+        aria-labelledby="hero-heading"
+      >
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+          <!-- H1: PRIMARY KEYWORD FOCUS -->
+          <h1
+            id="hero-heading"
+>>>>>>> 9ff426d (My changes from the ZIP version)
             class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-gray-900 mb-4"
           >
             The Ultimate
@@ -169,7 +389,10 @@
             <span class="text-[--blue-primary]">Quiz Maker</span>
           </h1>
 
+<<<<<<< HEAD
           <!-- H2: SUPPORTING KEYWORDS & VALUE PROPOSITION -->
+=======
+>>>>>>> 9ff426d (My changes from the ZIP version)
           <h2
             class="text-xl sm:text-2xl text-gray-600 mb-8 max-w-3xl mx-auto font-medium"
           >
@@ -182,7 +405,11 @@
 
           <!-- PRIMARY CALL TO ACTION (CTA) - Highly visible and descriptive -->
           <a
+<<<<<<< HEAD
             href="https://app.the-quiz-generator.com"
+=======
+            href="https://quizgenerator-r4pa.onrender.com"
+>>>>>>> 9ff426d (My changes from the ZIP version)
             class="inline-flex items-center justify-center px-10 py-4 border border-transparent text-lg font-bold rounded-xl text-white bg-[--blue-primary] hover:bg-blue-900 transition duration-300 transform hover:scale-105 shadow-xl glow-shadow focus:outline-none focus:ring-4 focus:ring-blue-900 focus:ring-opacity-50"
           >
             Start Generating Quizzes Now (It's Free!)
@@ -190,6 +417,7 @@
           <p class="mt-4 text-sm text-gray-500">
             No Credit Card Required. Start your assessment journey today.
           </p>
+<<<<<<< HEAD
         </div>
       </section>
 
@@ -198,6 +426,66 @@
 
     <!-- Footer: Simple and clean -->
     <footer class="p-6 bg-gray-800 text-white">
+=======
+          <p class="mt-6">
+            <a
+              href="#community-quizzes"
+              class="text-[--blue-primary] font-semibold text-base hover:underline"
+              >Browse the community quiz library →</a
+            >
+          </p>
+        </div>
+      </section>
+
+      <section
+        class="py-12 px-4 bg-slate-50 border-b border-slate-200/80"
+        aria-labelledby="about-quiz-tool"
+      >
+        <div class="max-w-3xl mx-auto text-slate-700 leading-relaxed">
+          <h2
+            id="about-quiz-tool"
+            class="text-2xl font-bold text-[--blue-primary] mb-4 text-center"
+          >
+            Free online quiz maker for teachers, trainers &amp; students
+          </h2>
+          <p class="text-base md:text-lg mb-4">
+            <strong>Quiz Generator</strong> helps you turn PDFs, lesson notes,
+            pasted text, or a short subject line into
+            <strong>printable or shareable quizzes</strong> in minutes. Use it as
+            an <strong>AI test generator</strong> for formative checks, review
+            sessions, or self-study—without designing every question by hand.
+          </p>
+          <p class="text-base md:text-lg mb-4">
+            Below you can explore our
+            <strong>community quiz library</strong>: real quizzes visitors have
+            created. Open any quiz to try it in the full app, or
+            <a
+              href="https://quizgenerator-r4pa.onrender.com"
+              class="text-[--blue-primary] font-semibold underline"
+              >launch the quiz maker</a
+            >
+            to build your own.
+          </p>
+          <p class="text-base md:text-lg text-slate-600">
+            Available in <strong>English</strong> and
+            <strong>Arabic</strong>—see the
+            <a
+              href="https://the-quiz-generator.com/ar.html"
+              class="text-[--blue-primary] font-semibold underline"
+              hreflang="ar"
+              >Arabic landing page</a
+            >.
+          </p>
+        </div>
+      </section>
+
+      <div id="community-quizzes" tabindex="-1">
+        <div id="quiz-library-root" class="quiz-lib-section"></div>
+      </div>
+    </main>
+
+    <footer class="p-6 bg-gray-800 text-white" role="contentinfo">
+>>>>>>> 9ff426d (My changes from the ZIP version)
       <div class="max-w-7xl mx-auto text-center text-sm">
         &copy; <span id="current-year">2024</span> The Quiz Generator. All
         rights reserved. |
@@ -209,7 +497,11 @@
         >
         |
         <a
+<<<<<<< HEAD
           href="https://app.the-quiz-generator.com"
+=======
+          href="https://quizgenerator-r4pa.onrender.com"
+>>>>>>> 9ff426d (My changes from the ZIP version)
           class="text-[--blue-primary] hover:text-blue-300"
           style="text-decoration: none; color: white"
           >App Login</a
@@ -217,10 +509,17 @@
       </div>
     </footer>
 
+<<<<<<< HEAD
     <!-- JavaScript to update the current year dynamically -->
+=======
+>>>>>>> 9ff426d (My changes from the ZIP version)
     <script>
       document.getElementById("current-year").textContent =
         new Date().getFullYear();
     </script>
+<<<<<<< HEAD
+=======
+    <script src="quiz-library.js" defer></script>
+>>>>>>> 9ff426d (My changes from the ZIP version)
   </body>
 </html>
